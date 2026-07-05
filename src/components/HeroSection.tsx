@@ -36,7 +36,7 @@ const HeroSection = () => {
             </span>
 
             <span className="text-gold-light text-sm font-medium">
-              Available for Remote Project Leadership & Consulting
+              Available for Remote Project Management & Marketing Operations
             </span>
 
             <span className="pointer-events-none absolute inset-0 rounded-full opacity-0 transition-opacity duration-300 group-hover:opacity-100">
