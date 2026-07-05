@@ -103,10 +103,7 @@ const ExperienceSection = () => {
                 Executive Summary
               </h3>
               <p className="text-muted-foreground leading-relaxed mb-4">
-                I specialize in bridging the gap between technical teams and business stakeholders.
-                With extensive experience in Agile delivery, I ensure projects are completed on time,
-                within budget, and aligned with strategic objectives. My approach combines data-driven
-                decision-making with clear communication to keep all parties informed and engaged.
+                I specialize in managing marketing and digital projects from planning through execution while keeping teams aligned, stakeholders informed, and deadlines on track. My experience includes campaign coordination, recruitment, process optimization, and agile project management within fast-paced remote environments.
               </p>
               <p className="text-sm text-muted-foreground italic">
                 Bilingüe (English/Español) — Comunicación ejecutiva para equipos globales.
