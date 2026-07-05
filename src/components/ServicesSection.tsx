@@ -1,55 +1,55 @@
 import {
-  LayoutDashboard,
+  Megaphone,
   GitBranch,
-  ClipboardCheck,
-  BarChart3,
+  UserPlus,
   Workflow,
-  Shield,
+  BarChart3,
+  MessagesSquare,
 } from "lucide-react";
 import { Reveal } from "./Reveal";
 
 const services = [
   {
-    icon: ClipboardCheck,
-    title: "Technical Project Management",
-    titleEs: "Gestión de Proyectos Técnicos",
+    icon: Megaphone,
+    title: "Marketing Project Management",
+    titleEs: "Gestión de Proyectos de Marketing",
     description:
-      "End-to-end delivery of software and digital transformation projects. From requirements gathering to deployment and beyond.",
+      "Planning, coordinating, and delivering marketing initiatives while ensuring deadlines, quality, and stakeholder alignment.",
   },
   {
     icon: GitBranch,
     title: "Agile Delivery Coordination",
     titleEs: "Coordinación de Entregas Ágiles",
     description:
-      "Scrum and Kanban implementation. Sprint planning, retrospectives, and continuous improvement for development teams.",
+      "Managing sprint planning, task prioritization, workflow optimization, and cross-functional collaboration.",
+  },
+  {
+    icon: UserPlus,
+    title: "Recruitment & Team Coordination",
+    titleEs: "Reclutamiento y Coordinación de Equipos",
+    description:
+      "Leading hiring processes, candidate screening, onboarding coordination, and team growth initiatives.",
   },
   {
     icon: Workflow,
-    title: "Software Project Planning",
-    titleEs: "Planificación de Proyectos de Software",
+    title: "Operations & Process Improvement",
+    titleEs: "Operaciones y Mejora de Procesos",
     description:
-      "Roadmap development, resource allocation, risk assessment, and milestone tracking for complex technical initiatives.",
+      "Designing workflows that improve productivity, communication, and project visibility across departments.",
   },
   {
     icon: BarChart3,
-    title: "KPI & Performance Dashboards",
-    titleEs: "Dashboards de KPI y Desempeño",
+    title: "KPI Tracking & Reporting",
+    titleEs: "Seguimiento de KPI y Reportes",
     description:
-      "Data-driven reporting and visualization. Executive dashboards that provide actionable insights for decision-makers.",
+      "Building dashboards and performance reports that help leadership make informed business decisions.",
   },
   {
-    icon: LayoutDashboard,
-    title: "IT Project Coordination",
-    titleEs: "Coordinación de Proyectos de TI",
+    icon: MessagesSquare,
+    title: "Client & Stakeholder Communication",
+    titleEs: "Comunicación con Clientes y Stakeholders",
     description:
-      "Cross-functional team alignment, vendor management, and infrastructure project oversight.",
-  },
-  {
-    icon: Shield,
-    title: "Quality Assurance Oversight",
-    titleEs: "Supervisión de Control de Calidad",
-    description:
-      "Process improvement, testing coordination, and quality gate management to ensure deliverable excellence.",
+      "Serving as the bridge between leadership, internal teams, and clients to ensure expectations are met.",
   },
 ];
 
