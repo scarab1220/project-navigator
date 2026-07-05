@@ -3,28 +3,28 @@ import { Reveal } from "./Reveal";
 
 const metrics = [
   {
-    number: "5+",
-    label: "Years Experience",
+    number: "11+",
+    label: "Years of Leadership",
     sublabel: "Años de Experiencia",
     icon: TrendingUp,
+  },
+  {
+    number: "5+",
+    label: "Countries Served",
+    sublabel: "Paises Atendidos",
+    icon: Globe,
+  },
+  {
+    number: "8+",
+    label: "Cross-Functional teams",
+    sublabel: "Equipos Gestionados",
+    icon: Users,
   },
   {
     number: "20+",
     label: "Projects Delivered",
     sublabel: "Proyectos Entregados",
     icon: Award,
-  },
-  {
-    number: "5+",
-    label: "Countries Served",
-    sublabel: "Países Atendidos",
-    icon: Globe,
-  },
-  {
-    number: "50+",
-    label: "Team Members Led",
-    sublabel: "Miembros de Equipo",
-    icon: Users,
   },
 ];
 
@@ -43,14 +43,13 @@ const ExperienceSection = () => {
         <Reveal>
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4 animate-slide-in-left">
-              <span className="inline-block">Proven</span>{" "}
+              <span className="inline-block">Results that drive</span>{" "}
               <span className="relative inline-block text-gradient-gold">
-                Track Record
+                Growth
               </span>
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto animate-fade-slide-up" style={{animationDelay: '100ms'}}>
-              Executive-level reporting and stakeholder management across global organizations.
-              Trusted by leadership teams to deliver high-stakes projects.
+              Project management focused on improving collaboration, optimizing workflows, and ensuring successful delivery of marketing initiatives and digital projects.
             </p>
           </div>
         </Reveal>
