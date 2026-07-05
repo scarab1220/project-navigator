@@ -53,16 +53,15 @@ const HeroSection = () => {
 
           {/* Headline */}
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground leading-tight mb-6">
-            Technical Project Manager for{" "}
+            Project Manager for{" "}
             <span className="text-gradient-gold">
-              Software & Digital Teams
+              Operations, Marketing & Digital Teams
             </span>
           </h1>
 
           {/* Subheading */}
           <p className="text-lg md:text-xl text-primary-foreground/80 mb-4 max-w-2xl leading-relaxed">
-            Delivering complex projects on time with Agile execution and KPI-driven delivery.
-            5+ years leading cross-functional teams across the Americas.
+            Delivering marketing campaigns, cross-functional projects, and operational improvements through agile leadership, strategic planning, and KPI-driven execution.
           </p>
 
           {/* Spanish tagline */}
