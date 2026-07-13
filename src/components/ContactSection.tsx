@@ -26,14 +26,14 @@ const ContactSection = () => {
               Let's Work Together
             </span>
 
-            <h2 className="mb-4 text-3xl font-bold text-primary-foreground md:text-4xl animate-slide-in-left" style={{animationDelay: '100ms'}}>
+            <h2 className="mb-4 text-3xl font-bold text-background md:text-4xl animate-slide-in-left" style={{animationDelay: '100ms'}}>
               <span className="inline-block">Ready to Discuss</span>{" "}
               <span className="relative inline-block text-gradient-gold">
                 Your Project?
               </span>
             </h2>
 
-            <p className="mb-8 text-lg text-primary-foreground/80 animate-fade-slide-up" style={{animationDelay: '200ms'}}>
+            <p className="mb-8 text-lg text-background/80 animate-fade-slide-up" style={{animationDelay: '200ms'}}>
             Whether you need end-to-end project leadership or strategic
             consulting, I’m here to help you deliver with confidence.
           </p>
@@ -57,7 +57,7 @@ const ContactSection = () => {
           </a>
 
           {/* Contact info */}
-            <div className="flex flex-col items-center justify-center gap-6 text-primary-foreground/70 sm:flex-row animate-fade-slide-up" style={{animationDelay: '400ms'}}>
+            <div className="flex flex-col items-center justify-center gap-6 text-background/70 sm:flex-row animate-fade-slide-up" style={{animationDelay: '400ms'}}>
             <div className="flex items-center gap-2">
               <Mail className="h-4 w-4 text-gold" />
               <span className="text-sm">oscarnoeabarca@outlook.com</span>
