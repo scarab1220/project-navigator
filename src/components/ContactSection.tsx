@@ -26,14 +26,14 @@ const ContactSection = () => {
               Let's Work Together
             </span>
 
-            <h2 className="mb-4 text-3xl font-bold text-primary-foreground md:text-4xl animate-slide-in-left" style={{animationDelay: '100ms'}}>
+            <h2 className="mb-4 text-3xl font-bold text-background md:text-4xl animate-slide-in-left" style={{animationDelay: '100ms'}}>
               <span className="inline-block">Ready to Discuss</span>{" "}
               <span className="relative inline-block text-gradient-gold">
                 Your Project?
               </span>
             </h2>
 
-            <p className="mb-8 text-lg text-primary-foreground/80 animate-fade-slide-up" style={{animationDelay: '200ms'}}>
+            <p className="mb-8 text-lg text-background/80 animate-fade-slide-up" style={{animationDelay: '200ms'}}>
             Whether you need end-to-end project leadership or strategic
             consulting, I’m here to help you deliver with confidence.
           </p>
@@ -41,13 +41,13 @@ const ContactSection = () => {
           {/* CTA (same effect as Hero "Contact Me") */}
           <a
             href="mailto:oscarnoeabarca@outlook.com"
-            className="group relative mb-12 inline-flex items-center justify-center rounded-xl px-6 py-3
-              bg-gold text-navy font-semibold shadow-lg animate-bounce-in
-              transition-all duration-500 hover:-translate-y-1 hover:shadow-2xl"
+            className="group relative mb-12 inline-flex items-center justify-center rounded-none px-6 py-3
+              bg-gold text-navy font-semibold brutal-shadow animate-bounce-in
+              transition-all duration-500 hover:-translate-y-1 hover:brutal-shadow"
               style={{animationDelay: '300ms'}}
           >
             {/* Shimmer sweep */}
-            <span className="pointer-events-none absolute inset-0 overflow-hidden rounded-xl">
+            <span className="pointer-events-none absolute inset-0 overflow-hidden rounded-none">
               <span className="absolute -left-1/2 top-0 h-full w-1/2 -skew-x-12 bg-gradient-to-r from-transparent via-white/40 to-transparent opacity-0 transition-all duration-700 group-hover:left-[120%] group-hover:opacity-100" />
             </span>
 
@@ -57,7 +57,7 @@ const ContactSection = () => {
           </a>
 
           {/* Contact info */}
-            <div className="flex flex-col items-center justify-center gap-6 text-primary-foreground/70 sm:flex-row animate-fade-slide-up" style={{animationDelay: '400ms'}}>
+            <div className="flex flex-col items-center justify-center gap-6 text-background/70 sm:flex-row animate-fade-slide-up" style={{animationDelay: '400ms'}}>
             <div className="flex items-center gap-2">
               <Mail className="h-4 w-4 text-gold" />
               <span className="text-sm">oscarnoeabarca@outlook.com</span>

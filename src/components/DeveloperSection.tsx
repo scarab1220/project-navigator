@@ -183,7 +183,7 @@ import { Reveal } from "./Reveal";
 
 const DeveloperSection = () => {
   return (
-    <section className="section-padding bg-muted/30">
+    <section className="section-padding bg-background border-y-[3px] border-foreground">
       <div className="container-narrow">
         {/* Section header */}
         <Reveal>
@@ -209,13 +209,13 @@ const DeveloperSection = () => {
           {technologies.map((tech, index) => (
             <Reveal key={`tech-${index}`} delay={index * 0.05}>
               <div
-                className="group relative flex flex-col items-center p-4 rounded-2xl border border-border/50 bg-background/60 backdrop-blur-sm
-                transition-all duration-500 hover:-translate-y-2 hover:border-accent/40 hover:shadow-2xl animate-scale-in"
+                className="group relative flex flex-col items-center p-4 rounded-none border-[3px] border-foreground bg-background
+                transition-all duration-500 hover:-translate-y-2 hover:border-foreground hover:brutal-shadow animate-scale-in"
                 style={{animationDelay: `${index * 50}ms`}}
               >
                 {/* Elegant glow overlay */}
-                <span className="pointer-events-none absolute inset-0 rounded-2xl opacity-0 transition-opacity duration-500 group-hover:opacity-100">
-                  <span className="absolute -inset-px rounded-2xl bg-gradient-to-r from-transparent via-accent/20 to-transparent blur-sm" />
+                <span className="pointer-events-none absolute inset-0 rounded-none opacity-0 transition-opacity duration-500 group-hover:opacity-100">
+                  <span className="absolute -inset-px rounded-none bg-gradient-to-r from-transparent via-accent/20 to-transparent blur-sm" />
                 </span>
 
                 <div className="mb-3 group-hover:scale-125 transition-transform duration-300 group-hover:animate-float">
@@ -241,16 +241,16 @@ const DeveloperSection = () => {
             return (
               <Reveal key={`cat-${index}`} delay={index * 0.1}>
                 <div
-                  className="group relative flex items-center gap-3 p-4 rounded-2xl border border-border/50 bg-background/60 backdrop-blur-sm
-                  transition-all duration-500 hover:-translate-y-1.5 hover:border-accent/40 hover:shadow-xl hover:bg-background/80 animate-fade-slide-up"
+                  className="group relative flex items-center gap-3 p-4 rounded-none border-[3px] border-foreground bg-background
+                  transition-all duration-500 hover:-translate-y-1.5 hover:border-foreground hover:brutal-shadow hover:bg-background/80 animate-fade-slide-up"
                   style={{animationDelay: `${index * 100}ms`}}
                 >
                   {/* Elegant glow overlay */}
-                  <span className="pointer-events-none absolute inset-0 rounded-2xl opacity-0 transition-opacity duration-500 group-hover:opacity-100">
-                    <span className="absolute -inset-px rounded-2xl bg-gradient-to-r from-transparent via-accent/15 to-transparent blur-sm" />
+                  <span className="pointer-events-none absolute inset-0 rounded-none opacity-0 transition-opacity duration-500 group-hover:opacity-100">
+                    <span className="absolute -inset-px rounded-none bg-gradient-to-r from-transparent via-accent/15 to-transparent blur-sm" />
                   </span>
 
-                  <div className="w-10 h-10 rounded-xl bg-accent/10 flex items-center justify-center transition-all duration-300 group-hover:scale-110 group-hover:bg-accent/20 group-hover:animate-float">
+                  <div className="w-10 h-10 rounded-none bg-accent/10 flex items-center justify-center transition-all duration-300 group-hover:scale-110 group-hover:bg-accent/20 group-hover:animate-float">
                     <Icon className="w-5 h-5 text-accent" />
                   </div>
 
@@ -268,7 +268,7 @@ const DeveloperSection = () => {
 
         {/* Developer note */}
         <div className="mt-12 text-center">
-          <div className="inline-flex items-center gap-4 px-6 py-4 bg-primary/5 rounded-2xl border border-primary/10">
+          <div className="inline-flex items-center gap-4 px-6 py-4 bg-primary/5 rounded-none border border-primary/10">
             <Code2 className="w-6 h-6 text-accent" />
             <div className="text-left">
               <p className="text-sm font-medium text-foreground">Technical PM Advantage</p>

@@ -2,63 +2,59 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Professional TPM Landing Page Design System
-   Navy & Gold palette - Executive, trustworthy, clean */
+/* Brutalist Pop Design System — paper white, ink, orange, electric yellow */
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Hind:wght@300;400;500;600;700&display=swap');
 
 @layer base {
   :root {
-    /* Core brand colors - Navy & Gold */
-    --background: 210 20% 98%;
-    --foreground: 222 47% 11%;
-    
+    /* Brutalist Pop core tokens */
+    --background: 0 0% 100%;
+    --foreground: 0 0% 4%;
+
     --card: 0 0% 100%;
-    --card-foreground: 222 47% 11%;
-    
+    --card-foreground: 0 0% 4%;
+
     --popover: 0 0% 100%;
-    --popover-foreground: 222 47% 11%;
-    
-    /* Primary: Deep Navy */
-    --primary: 220 60% 20%;
-    --primary-foreground: 210 40% 98%;
-    
-    /* Secondary: Warm Stone */
-    --secondary: 30 15% 95%;
-    --secondary-foreground: 222 47% 11%;
-    
-    /* Muted: Soft gray */
-    --muted: 220 14% 96%;
-    --muted-foreground: 220 9% 46%;
-    
-    /* Accent: Gold */
-    --accent: 38 70% 50%;
-    --accent-foreground: 222 47% 11%;
-    
-    /* Gold variant for highlights */
-    --gold: 38 70% 50%;
-    --gold-light: 40 65% 65%;
-    --gold-dark: 35 75% 40%;
-    
-    /* Navy variants */
-    --navy: 220 60% 20%;
-    --navy-light: 218 45% 35%;
-    --navy-dark: 222 65% 12%;
-    
-    --destructive: 0 84% 60%;
-    --destructive-foreground: 210 40% 98%;
-    
-    --border: 220 15% 90%;
-    --input: 220 15% 90%;
-    --ring: 38 70% 50%;
-    
-    --radius: 0.5rem;
-    
-    /* Shadows */
-    --shadow-sm: 0 1px 2px 0 hsl(220 60% 20% / 0.05);
-    --shadow-md: 0 4px 6px -1px hsl(220 60% 20% / 0.1), 0 2px 4px -2px hsl(220 60% 20% / 0.1);
-    --shadow-lg: 0 10px 15px -3px hsl(220 60% 20% / 0.1), 0 4px 6px -4px hsl(220 60% 20% / 0.1);
-    --shadow-xl: 0 20px 25px -5px hsl(220 60% 20% / 0.1), 0 8px 10px -6px hsl(220 60% 20% / 0.1);
+    --popover-foreground: 0 0% 4%;
+
+    /* Primary: electric orange */
+    --primary: 14 100% 57%;
+    --primary-foreground: 0 0% 4%;
+
+    --secondary: 54 100% 61%;
+    --secondary-foreground: 0 0% 4%;
+
+    --muted: 0 0% 96%;
+    --muted-foreground: 0 0% 25%;
+
+    /* Accent: electric yellow */
+    --accent: 54 100% 61%;
+    --accent-foreground: 0 0% 4%;
+
+    /* Legacy "gold" tokens remapped to yellow so existing classes work */
+    --gold: 54 100% 61%;
+    --gold-light: 54 100% 72%;
+    --gold-dark: 40 100% 50%;
+
+    /* Legacy "navy" tokens remapped to ink */
+    --navy: 0 0% 4%;
+    --navy-light: 0 0% 12%;
+    --navy-dark: 0 0% 0%;
+
+    --destructive: 0 84% 55%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 0 0% 4%;
+    --input: 0 0% 4%;
+    --ring: 14 100% 57%;
+
+    --radius: 0px;
+
+    --shadow-sm: 4px 4px 0 hsl(0 0% 4%);
+    --shadow-md: 6px 6px 0 hsl(0 0% 4%);
+    --shadow-lg: 8px 8px 0 hsl(0 0% 4%);
+    --shadow-xl: 12px 12px 0 hsl(0 0% 4%);
     
     /* Sidebar */
     --sidebar-background: 0 0% 98%;
@@ -118,105 +114,93 @@
   
   body {
     @apply bg-background text-foreground antialiased;
-    font-family: 'Inter', system-ui, sans-serif;
+    font-family: 'Hind', system-ui, sans-serif;
   }
   
   h1, h2, h3, h4, h5, h6 {
-    font-family: 'Playfair Display', Georgia, serif;
-    @apply font-semibold tracking-tight;
+    font-family: 'Archivo Black', 'Hind', system-ui, sans-serif;
+    @apply font-normal tracking-tight uppercase;
   }
 }
 
 @layer components {
   .text-gradient-gold {
-    @apply bg-clip-text text-transparent;
-    background-image: linear-gradient(135deg, hsl(var(--gold)) 0%, hsl(var(--gold-light)) 50%, hsl(var(--gold)) 100%);
+    @apply inline-block bg-primary text-primary-foreground px-2;
+    box-shadow: 4px 4px 0 hsl(var(--foreground));
+    transform: rotate(-1deg);
   }
-  
-  .bg-gradient-navy {
-    background: linear-gradient(135deg, hsl(var(--navy-dark)) 0%, hsl(var(--navy)) 50%, hsl(var(--navy-light)) 100%);
-  }
-  
+
+  .bg-gradient-navy,
   .bg-gradient-hero {
-    background: linear-gradient(180deg, hsl(var(--navy-dark)) 0%, hsl(var(--navy)) 100%);
+    background: hsl(var(--foreground));
   }
-  
+
   .section-padding {
     @apply px-6 py-16 md:px-8 md:py-24 lg:px-12;
   }
-  
+
   .container-narrow {
     @apply max-w-5xl mx-auto;
   }
-  
+
+  .brutal-border {
+    border: 3px solid hsl(var(--foreground));
+  }
+  .brutal-shadow {
+    box-shadow: 8px 8px 0 hsl(var(--foreground));
+  }
+  .brutal-shadow-accent {
+    box-shadow: 8px 8px 0 hsl(var(--primary));
+  }
+  .brutal-shadow-yellow {
+    box-shadow: 8px 8px 0 hsl(var(--accent));
+  }
+
   .card-professional {
-    @apply bg-card rounded-lg border border-border p-6 transition-all duration-300;
-    box-shadow: var(--shadow-md);
+    @apply bg-card p-6 transition-all duration-200;
+    border: 3px solid hsl(var(--foreground));
+    box-shadow: 6px 6px 0 hsl(var(--foreground));
   }
-  
   .card-professional:hover {
-    box-shadow: var(--shadow-lg);
-    @apply border-accent/30;
+    transform: translate(-2px, -2px);
+    box-shadow: 10px 10px 0 hsl(var(--primary));
   }
-  
-  .gold-underline {
-    @apply relative inline-block;
-  }
-  
-  .gold-underline::after {
-    content: '';
-    @apply absolute bottom-0 left-0 w-full h-0.5 bg-accent;
-  }
-  
-  .btn-primary-hero {
-    @apply inline-flex items-center justify-center px-8 py-4 text-base font-medium rounded-md transition-all duration-300;
-    background: linear-gradient(135deg, hsl(var(--gold-dark)) 0%, hsl(var(--gold)) 100%);
-    color: hsl(var(--navy-dark));
-    box-shadow: 0 4px 14px 0 hsl(var(--gold) / 0.4);
-  }
-  
-  .btn-primary-hero:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px 0 hsl(var(--gold) / 0.5);
-  }
-  
-  .btn-secondary-hero {
-    @apply inline-flex items-center justify-center px-8 py-4 text-base font-medium rounded-md transition-all duration-300 border-2;
-    border-color: hsl(var(--gold) / 0.6);
-    color: hsl(var(--gold-light));
-    background: transparent;
-  }
-  
-  .btn-secondary-hero:hover {
-    background: hsl(var(--gold) / 0.1);
-    border-color: hsl(var(--gold));
-  }
-  
+
   .metric-number {
-    font-family: 'Playfair Display', Georgia, serif;
-    @apply text-4xl md:text-5xl font-bold;
-    color: hsl(var(--gold));
+    font-family: 'Archivo Black', system-ui, sans-serif;
+    @apply text-5xl md:text-6xl font-normal;
+    color: hsl(var(--foreground));
+    letter-spacing: -0.02em;
   }
-  
+
   .skill-tag {
-    @apply inline-flex items-center px-4 py-2 rounded-full text-sm font-medium transition-colors;
-    background: hsl(var(--navy) / 0.08);
-    color: hsl(var(--navy));
+    @apply inline-flex items-center px-3 py-1.5 text-sm font-semibold uppercase transition-transform;
+    background: hsl(var(--accent));
+    color: hsl(var(--foreground));
+    border: 2px solid hsl(var(--foreground));
   }
-  
   .skill-tag:hover {
-    background: hsl(var(--gold) / 0.15);
-    color: hsl(var(--gold-dark));
+    transform: translate(-1px, -1px);
   }
-  
+
   .link-professional {
-    @apply inline-flex items-center gap-2 font-medium transition-colors;
-    color: hsl(var(--navy));
+    @apply inline-flex items-center gap-2 font-semibold uppercase transition-colors;
+    color: hsl(var(--foreground));
   }
-  
   .link-professional:hover {
-    color: hsl(var(--gold-dark));
+    color: hsl(var(--primary));
   }
+
+  /* Kill legacy aurora blobs across all sections in one sweep */
+  [aria-hidden="true"] .blur-3xl,
+  [aria-hidden] .blur-3xl,
+  [aria-hidden="true"] .blur-2xl,
+  [aria-hidden] .blur-2xl {
+    display: none !important;
+  }
+
+  /* Neutralize glassmorphism hover glows globally */
+  .backdrop-blur-sm { backdrop-filter: none !important; }
 }
 
 @layer utilities {
@@ -331,6 +315,14 @@
     to {
       transform: rotate(360deg);
     }
+  }
+
+  @keyframes marquee {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+  }
+  .animate-marquee {
+    animation: marquee 22s linear infinite;
   }
 
   @keyframes bounce-in {
