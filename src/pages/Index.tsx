@@ -12,28 +12,16 @@ import { SpeedInsights } from "@vercel/speed-insights/react"
 const Index = () => {
   return (
     <main className="relative min-h-screen overflow-hidden">
-      {/* Fondo aurora */}
-      <div className="pointer-events-none absolute inset-0 -z-10 overflow-hidden">
-        <div
-          className="
-            absolute left-1/2 top-[-180px]
-            h-[520px] w-[820px]
-            -translate-x-1/2
-            rounded-full
-            bg-gradient-to-r from-fuchsia-500 via-sky-500 to-emerald-500
-            opacity-25 blur-3xl
-          "
-        />
-        <div
-          className="
-            absolute right-[-220px] top-[35%]
-            h-[420px] w-[420px]
-            rounded-full
-            bg-gradient-to-tr from-sky-500 via-indigo-500 to-fuchsia-500
-            opacity-15 blur-3xl
-          "
-        />
-      </div>
+      {/* Brutalist grid background */}
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute inset-0 -z-10"
+        style={{
+          backgroundImage:
+            "linear-gradient(hsl(0 0% 4% / 0.06) 1px, transparent 1px), linear-gradient(90deg, hsl(0 0% 4% / 0.06) 1px, transparent 1px)",
+          backgroundSize: "48px 48px",
+        }}
+      />
 
       <Reveal>
         <HeroSection />
