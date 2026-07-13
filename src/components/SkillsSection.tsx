@@ -91,17 +91,17 @@ const SkillsSection = () => {
           {skillCategories.map((category, index) => (
             <Reveal key={`skill-${index}`} delay={index * 0.12}>
               <div
-                className="group relative rounded-2xl border border-border/50 bg-background/70 backdrop-blur-sm p-6 shadow-sm
-                transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl hover:border-accent/40 animate-scale-in"
+                className="group relative rounded-none border-[3px] border-foreground bg-background p-6 shadow-sm
+                transition-all duration-500 hover:-translate-y-2 hover:brutal-shadow hover:border-foreground animate-scale-in"
                 style={{animationDelay: `${index * 120}ms`}}
               >
                 {/* Elegant glow */}
-                <span className="pointer-events-none absolute inset-0 rounded-2xl opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                  <span className="absolute -inset-px rounded-2xl bg-gradient-to-r from-transparent via-foreground/6 to-transparent blur-sm" />
+                <span className="pointer-events-none absolute inset-0 rounded-none opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                  <span className="absolute -inset-px rounded-none bg-gradient-to-r from-transparent via-foreground/6 to-transparent blur-sm" />
                 </span>
 
                 {/* Soft shimmer sweep (flashy pero elegante) */}
-                <span className="pointer-events-none absolute inset-0 overflow-hidden rounded-2xl">
+                <span className="pointer-events-none absolute inset-0 overflow-hidden rounded-none">
                   <span className="absolute -left-1/2 top-0 h-full w-1/2 -skew-x-12 bg-gradient-to-r from-transparent via-foreground/6 to-transparent opacity-0 transition-all duration-700 group-hover:left-[120%] group-hover:opacity-100" />
                 </span>
 
@@ -121,7 +121,7 @@ const SkillsSection = () => {
                         border border-foreground/12 bg-foreground/[0.03]
                         px-3 py-1.5 text-xs font-semibold text-foreground
                         shadow-sm transition-all duration-300
-                        hover:-translate-y-0.5 hover:shadow-md hover:border-foreground/20"
+                        hover:-translate-y-0.5 hover:brutal-shadow-accent hover:border-foreground/20"
                       >
                         {/* Micro glow elegante (no neon) */}
                         <span className="pointer-events-none absolute inset-0 rounded-full opacity-0 transition-opacity duration-300 group-hover/skill:opacity-100">
@@ -145,7 +145,7 @@ const SkillsSection = () => {
 
         {/* Additional skills note */}
         <div className="mt-12 text-center">
-          <div className="inline-flex items-center gap-4 px-6 py-4 rounded-2xl border border-border/50 bg-background/70 backdrop-blur-sm shadow-sm">
+          <div className="inline-flex items-center gap-4 px-6 py-4 rounded-none border-[3px] border-foreground bg-background shadow-sm">
             <div className="text-left">
               <p className="text-sm font-medium text-foreground">
                 Remote Collaboration Expert

@@ -36,12 +36,12 @@ const LinksSection = () => {
               href="https://www.linkedin.com/in/oscar-abarca-a1ba4a88/"
               target="_blank"
               rel="noopener noreferrer"
-              className="group relative overflow-hidden rounded-2xl border border-border/60 bg-background p-5
-              flex items-center gap-4 shadow-sm transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl hover:border-blue-400/40 animate-scale-in"
+              className="group relative overflow-hidden rounded-none border-[3px] border-foreground bg-background p-5
+              flex items-center gap-4 shadow-sm transition-all duration-500 hover:-translate-y-2 hover:brutal-shadow hover:border-blue-400/40 animate-scale-in"
             >
             {/* Elegant glow */}
             <span className="pointer-events-none absolute inset-0 opacity-0 transition-opacity duration-500 group-hover:opacity-100">
-              <span className="absolute -inset-px rounded-2xl bg-gradient-to-r from-transparent via-[#0A66C2]/25 to-transparent blur-sm" />
+              <span className="absolute -inset-px rounded-none bg-gradient-to-r from-transparent via-[#0A66C2]/25 to-transparent blur-sm" />
             </span>
 
             {/* Subtle shimmer sweep */}
@@ -49,7 +49,7 @@ const LinksSection = () => {
               <span className="absolute -left-1/2 top-0 h-full w-1/2 -skew-x-12 bg-gradient-to-r from-transparent via-foreground/6 to-transparent opacity-0 transition-all duration-700 group-hover:left-[120%] group-hover:opacity-100" />
             </span>
 
-            <div className="relative flex-shrink-0 w-14 h-14 rounded-xl bg-[#0A66C2] flex items-center justify-center shadow-sm">
+            <div className="relative flex-shrink-0 w-14 h-14 rounded-none bg-[#0A66C2] flex items-center justify-center shadow-sm">
               <Linkedin className="w-7 h-7 text-white" />
             </div>
 
@@ -71,12 +71,12 @@ const LinksSection = () => {
               href="https://github.com/scarab1220"
               target="_blank"
               rel="noopener noreferrer"
-              className="group relative overflow-hidden rounded-2xl border border-border/60 bg-background p-5
-              flex items-center gap-4 shadow-sm transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl hover:border-gray-600/40 animate-scale-in"
+              className="group relative overflow-hidden rounded-none border-[3px] border-foreground bg-background p-5
+              flex items-center gap-4 shadow-sm transition-all duration-500 hover:-translate-y-2 hover:brutal-shadow hover:border-gray-600/40 animate-scale-in"
             >
             {/* Elegant glow */}
             <span className="pointer-events-none absolute inset-0 opacity-0 transition-opacity duration-500 group-hover:opacity-100">
-              <span className="absolute -inset-px rounded-2xl bg-gradient-to-r from-transparent via-[#24292F]/15 to-transparent blur-sm" />
+              <span className="absolute -inset-px rounded-none bg-gradient-to-r from-transparent via-[#24292F]/15 to-transparent blur-sm" />
             </span>
 
             {/* Subtle shimmer sweep */}
@@ -84,7 +84,7 @@ const LinksSection = () => {
               <span className="absolute -left-1/2 top-0 h-full w-1/2 -skew-x-12 bg-gradient-to-r from-transparent via-foreground/6 to-transparent opacity-0 transition-all duration-700 group-hover:left-[120%] group-hover:opacity-100" />
             </span>
 
-            <div className="relative flex-shrink-0 w-14 h-14 rounded-xl bg-[#24292F] flex items-center justify-center shadow-sm">
+            <div className="relative flex-shrink-0 w-14 h-14 rounded-none bg-[#24292F] flex items-center justify-center shadow-sm">
               <Github className="w-7 h-7 text-white" />
             </div>
 

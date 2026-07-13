@@ -91,17 +91,17 @@ const ServicesSection = () => {
           {services.map((service, index) => (
             <Reveal key={`service-${index}`} delay={index * 0.1}>
               <div
-                className="group relative rounded-2xl border border-border/50 bg-background/70 backdrop-blur-sm p-6 shadow-sm
-                transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl hover:border-accent/40 animate-scale-in"
+                className="group relative rounded-none border-[3px] border-foreground bg-background p-6 shadow-sm
+                transition-all duration-500 hover:-translate-y-2 hover:brutal-shadow hover:border-foreground animate-scale-in"
                 style={{animationDelay: `${index * 100}ms`}}
               >
                 {/* Elegant glow (no neon) */}
-                <span className="pointer-events-none absolute inset-0 rounded-2xl opacity-0 transition-opacity duration-500 group-hover:opacity-100">
-                  <span className="absolute -inset-px rounded-2xl bg-gradient-to-r from-transparent via-accent/20 to-transparent blur-sm" />
+                <span className="pointer-events-none absolute inset-0 rounded-none opacity-0 transition-opacity duration-500 group-hover:opacity-100">
+                  <span className="absolute -inset-px rounded-none bg-gradient-to-r from-transparent via-accent/20 to-transparent blur-sm" />
                 </span>
 
                 <div
-                  className="relative inline-flex items-center justify-center w-12 h-12 rounded-xl bg-accent/10 text-accent mb-4
+                  className="relative inline-flex items-center justify-center w-12 h-12 rounded-none bg-accent/10 text-accent mb-4
                 transition-all duration-300 group-hover:bg-accent/20 group-hover:scale-110 group-hover:animate-float"
                 >
                   <service.icon className="w-6 h-6" />
@@ -140,7 +140,7 @@ const ServicesSection = () => {
                 border border-foreground/12 bg-foreground/[0.03]
                 px-4 py-2 text-xs font-semibold text-foreground
                 shadow-sm transition-all duration-300
-                hover:-translate-y-0.5 hover:shadow-md hover:border-foreground/20"
+                hover:-translate-y-0.5 hover:brutal-shadow-accent hover:border-foreground/20"
               >
                 {/* subtle highlight ring (elegant, not neon) */}
                 <span className="pointer-events-none absolute inset-0 rounded-full opacity-0 transition-opacity duration-300 group-hover:opacity-100">

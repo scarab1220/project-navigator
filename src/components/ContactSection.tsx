@@ -41,13 +41,13 @@ const ContactSection = () => {
           {/* CTA (same effect as Hero "Contact Me") */}
           <a
             href="mailto:oscarnoeabarca@outlook.com"
-            className="group relative mb-12 inline-flex items-center justify-center rounded-xl px-6 py-3
-              bg-gold text-navy font-semibold shadow-lg animate-bounce-in
-              transition-all duration-500 hover:-translate-y-1 hover:shadow-2xl"
+            className="group relative mb-12 inline-flex items-center justify-center rounded-none px-6 py-3
+              bg-gold text-navy font-semibold brutal-shadow animate-bounce-in
+              transition-all duration-500 hover:-translate-y-1 hover:brutal-shadow"
               style={{animationDelay: '300ms'}}
           >
             {/* Shimmer sweep */}
-            <span className="pointer-events-none absolute inset-0 overflow-hidden rounded-xl">
+            <span className="pointer-events-none absolute inset-0 overflow-hidden rounded-none">
               <span className="absolute -left-1/2 top-0 h-full w-1/2 -skew-x-12 bg-gradient-to-r from-transparent via-white/40 to-transparent opacity-0 transition-all duration-700 group-hover:left-[120%] group-hover:opacity-100" />
             </span>
 
