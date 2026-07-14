@@ -7,7 +7,6 @@ import LinksSection from "@/components/LinksSection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
 import { Reveal } from "@/components/Reveal";
-import { SpeedInsights } from "@vercel/speed-insights/react"
 
 const Index = () => {
   return (
