@@ -11,7 +11,7 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row items-center justify-between gap-4">
           {/* Copyright */}
           <p className="text-sm text-background/70 uppercase tracking-wider font-semibold">
-            © {currentYear} Oscar Noe Abarca Navas. All rights reserved.
+            © {currentYear}&nbsp;OSCAR ABARCA. ALL RIGHTS RESERVED.
           </p>
 
           {/* Social links */}
