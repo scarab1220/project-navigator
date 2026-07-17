@@ -1,4 +1,5 @@
-import { Linkedin, Github } from "lucide-react";
+import { Linkedin, Github, Link } from "lucide-react";
+
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -33,6 +34,16 @@ const Footer = () => {
               aria-label="GitHub"
             >
               <Github className="relative w-5 h-5" />
+            </a>
+
+            <a
+              href="https://lanceofgod.carrd.co/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group inline-flex items-center justify-center p-2 border-[2px] border-background bg-foreground text-background transition-all duration-150 hover:bg-accent hover:text-foreground hover:-translate-y-0.5"
+              aria-label="Carrd"
+            >
+              <Link className="relative w-5 h-5" />
             </a>
           </div>
         </div>
